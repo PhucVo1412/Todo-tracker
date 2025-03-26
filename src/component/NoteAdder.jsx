@@ -2,10 +2,14 @@ import React from "react";
 
 const NoteAdder = (props) => {
 
-    return <form>
-        Add a note 
+    const handle = () => {}
+
+    return (
+    <form>
+        <label>Add a note</label>
+        <input type="text" id="fname" name="fname"></input>
         
-    </form>
+    </form>)
 }
 
 export default NoteAdder;
