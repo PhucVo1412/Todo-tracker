@@ -25,20 +25,35 @@ html{
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
+  padding: 15px;
   width: 240px;
   margin: 16px;
   float: left;
+  position: relative;
+  min-height: 120px; 
 }
 .note h1 {
   font-size: 1.1em;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  color : #333;
+  font-weight: 600;
 }
 .note p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+  font-size: 1em;
+  margin-bottom: 30px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  color : #444;
+  line-height: 1.4;
+}
+
+.note small {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .header-clock{
@@ -86,4 +101,51 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.date-filter {
+  margin: 10px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.date-filter button {
+  padding: 5px 10px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-filter button:hover {
+  background: #e0e0e0;
+}
+
+.date-filter button.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+.date-filter {
+  margin: 10px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.date-filter button {
+  padding: 5px 10px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-filter button:hover {
+  background: #e0e0e0;
+}
+
+.date-filter button.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
 }
