@@ -14,12 +14,13 @@ const Header = () => {
         return () => clearInterval(timer);
       }, []);
 
+
     return (
     <div className = 'header'> 
         <header  >
             <BookIcon fontSize="small"/>
             TODO TRACKER 
-            <div className="header-clock">{currentTime}</div>
+            <div>{currentTime}</div>
         </header>
     </div>)
 
